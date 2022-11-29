@@ -1,0 +1,22 @@
+{
+    "idorigin": "0068d000002PaEUAA0",
+      "name": "Growth platform at Kitopi",
+      "description": "description of Growth platform at Kitopi",
+      "createddate": "2022-03-28T08:45:01.000Z",
+      // "createdby": null,
+      "fiscalquarter": 3,
+      "fiscalyear": 2023,
+      "amount": 50000,      
+      "forecastcategory": "Omitted",
+       "probability": "0",
+      "isclosed": true,
+      "closedate": "2023-07-29T23:00:00.000Z",
+      "iswon": false,
+      "stagename": "Closed Lost",
+      "fiscalmonth": 3,
+      "lastmodifieddate": "2022-04-21T11:29:48.000Z",
+//      "lastmodifiedby": null,
+       "nextstep": "Call with CEO on April 4",
+      
+    
+}

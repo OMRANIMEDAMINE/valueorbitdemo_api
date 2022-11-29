@@ -1,0 +1,320 @@
+git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+
+git push https://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@github.com/OMRANIMEDAMINE/valueorbit-backend-api-v1.git
+
+
+https://valueorbit-backend-api-v1.herokuapp.com/v1/redshift/opportunity
+
+git commit -m "Auto synch commit"
+
+git add .
+
+git branch -M main
+
+git push -u origin main
+
+git push heroku main:main
+
+
+git clone https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git
+
+/*****GIT**/
+git config --global user.password "jKR4hudMsk4VCyEU6zjf"
+
+git init
+git config --global user.login "amine.omrani@valueorbit.com" 
+git config --global user.email "amine.omrani@valueorbit.com"
+git config --global user.password "jKR4hudMsk4VCyEU6zjf"
+
+git remote add origin https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git 
+git remote add master https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git
+git remote add main https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git
+
+
+git remote set-url origin https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git
+git remote set-url master https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git
+git remote set-url main https://medamineomrani@bitbucket.org/valueorbit/backend_autosynch.git
+
+
+
+git remote set-url origin https://medamineomrani@bitbucket.org/valueorbit/poc_backend_api.git
+git remote set-url master https://medamineomrani@bitbucket.org/valueorbit/poc_backend_api.git
+git remote set-url main https://medamineomrani@bitbucket.org/valueorbit/poc_backend_api.git
+
+
+
+git remote set-url origin https://medamineomrani@bitbucket.org/valueorbit/vo_websiteapi.git
+git remote set-url master https://medamineomrani@bitbucket.org/valueorbit/vo_websiteapi.git
+git remote set-url main https://medamineomrani@bitbucket.org/valueorbit/vo_websiteapi.git
+git remote add master https://medamineomrani@bitbucket.org/valueorbit/vo_websiteapi.git
+ 
+
+git add .
+git commit -m "Auto Synch"
+
+git config --global user.password "jKR4hudMsk4VCyEU6zjf"
+git push --set-upstream master -f
+
+
+
+
+#DEV
+heroku git:remote -a valueorbit-api-only
+heroku git:remote -a valueorbit-autosynch
+heroku git:remote -a vowebsiteapi
+
+
+#Push heroku
+git push -f heroku master
+
+
+heroku logs --tail
+
+heroku create -a valueorbit-api-only
+heroku create -a valueorbit-autosynch
+heroku create -a vowebsiteapi
+heroku git:remote -a vowebsiteapi
+
+
+/***MONGODB***/
+
+sudo service mongodb start
+sudo service mongodb restart
+
+
+//process flow data
+//PlayBook (7)
+ 
+Metrics (4) -->  
+1.   Pain quantified    
+2.   Business Value Quantified
+3.   Cost justification Completed    
+4.   Business Pain
+
+Economic buyer (4)  --> 
+1.   EB Meeting Scheduled    
+2.   EB Authority confirmed    
+3.   EB Budget Confirmed    
+4.   EB Value Confirmed
+
+Decision criteria (2)
+1.   Product Capabilities To Pain Described    
+2.   Decision Criteria Summarized
+
+Decision Process (3)
+1.   Decision Process Summarized
+2.   Decision Stakeholders Met    
+3.   Competition Involved In Decision Process?
+
+Implicate the pain (3)
+1.   Why do they have to buy?    
+2.   Why do they have to buy from us?    
+3.   Why do they have to buy now?
+
+Champion (3)
+1.   Champion Power Confirmed    
+2.   Champion Influence Confirmed
+3.   Champion Introduction to EB
+
+Competition (2)
+1.   Competition and Champion    
+2.   Competition influence on EB and DC confirmed?
+
+
+//MANAGER
+{
+        "idorigin": "0058d000000kFPFAA2",
+        "firstname": "manager",
+        "lastname": "manager",
+        "username": "manager",
+        "password": "manager"
+}
+
+//SALES: 
+{
+        "idorigin": "0058d000000kFPFAA2",
+        "firstname": "bassem",
+        "lastname": "Ben Jemaa",
+        "username": "bassem",
+        "password": "bassem"
+}
+{
+        "idorigin": "0058d000002DVqdAAG",
+        "firstname": "ahmed",
+        "lastname": "aboud",
+        "username": "ahmed",
+        "password": "ahmed"
+}
+
+
+{
+        "idorigin": "0058d000002CYZpAAO",
+        "firstname": "sami",
+        "lastname": "rejeb",
+        "username": "sami",
+        "password": "sami"
+}
+
+/***********/
+MANAGER JUDGMENT
+Likely 20  30
+Most Likely 50 60
+Commit  90  100
+Pipeline  0   10
+
+{
+      "name": "Likely",
+      "percentage_forecast": 20,
+      "percentage_best_case": 30
+}
+
+{
+      "name": "Most Likely",
+      "percentage_forecast": 50,
+      "percentage_best_case": 60
+ 
+}
+{
+      "name": "Commit",
+      "percentage_forecast": 90,
+      "percentage_best_case": 100
+ 
+}
+{
+      "name": "Pipeline",
+      "percentage_forecast": 0,
+      "percentage_best_case": 10
+}
+
+ 
+
+
+
+
+
+// docker CMD  https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+
+// MAPS IT DOCKER
+sudo docker login
+login: mapsitdockerhub
+pwd: 123406979869**OM****
+
+// VALUEORBI  DOCKER
+sudo docker login
+login: valueorbitdockerhub
+pwd:  Mahdia2020s
+
+
+repository value orbit : valueorbit_api_repo
+
+sudo docker build -t mapsitdockerhub/valueorbit_api_repo . // OR sudo docker build -t mapsitdockerhub/valueorbit_api_repo:v26112022_3 .
+
+sudo docker push mapsitdockerhub/valueorbit_api_repo:v26112022_3
+
+sudo docker run -d -p 4000:4000 mapsitdockerhub/valueorbit_api_repo:v26112022_3
+
+in server cmd:
+sudo ssh -i ./NewKey.pem ubuntu@ec2-3-140-248-0.us-east-2.compute.amazonaws.com
+pull --> then run
+sudo docker pull mapsitdockerhub/valueorbit_api_repo:v26112022_3 
+
+sudo docker run -d -p 4000:4000 -v valueorbitapi:/usr/src mapsitdockerhub/valueorbit_api_repo:v26112022_3
+
+/var/snap/docker/common/var-lib-docker/volumes/valueorbitapi/_data/app/logs
+
+
+#displays CONTAINER: sudo docker ps -a
+#displays images: sudo docker images
+#remove image:  sudo docker rmi "IMAGE ID "
+
+#remove CONTAINER: sudo docker rm -f "CONTAINER ID" 
+#stop container: sudo docker stop "CONTAINER ID"
+#docker log cotainer: sudo docker logs "CONTAINER ID" 
+ 
+
+//delete CONTAINER
+sudo docker rm -f ID-container
+
+//delete image
+sudo docker  rmi "ID image"
+
+//************SET VAR CONFIGS *******//
+heroku config:set ACCESS_TOKEN_SECRET=6a01ad4b07e69f941a8800478b086dc40ceebd21acb601883f5763e4f98b28eaee69c0a280b928aa584bc24c43aaba78b2281cbe1dcf12488dd080a1f39e7770
+heroku config:set REFRESH_TOKEN_SECRET=8b8e6d2fb58b35af74d8121baca4d5d4f00b9846661dd7a870c1052af9399b94476163549069a65b7306dbfa47885779680195dadae19b9e7a4229d7cb8265a7
+heroku config:set EXPIRATION_DELAY=300s
+
+
+ 
+"synch": "nodemon serverSynch.js"
+
+
+//*****MONGODB** //
+
+sudo systemctl start mongod
+sudo systemctl status mongod
+
+sudo systemctl stop mongod
+sudo systemctl restart mongod
+default port : 27017
+mongosh
+
+
+DB_CONNECTION = mongodb:root:123406@localhost:27017/ValueOrbitDB
+
+
+
+
+************************
+id, name, description,phone, type, billingaddress, billingstate, accountnumber, website 
+
+
+/***push for Nour*// https://github.com/nourmtar1994/value-orbit
+sudo docker build -t valueorbitdockerhub/valueorbitfrontend:v23112022 .
+sudo docker push valueorbitdockerhub/valueorbitfrontend:v23112022
+sudo docker run -d -p 3000:3000 valueorbitdockerhub/valueorbitfrontend:v23112022 // test local
+in server cmd:
+sudo ssh -i ./NewKey.pem ubuntu@ec2-3-140-248-0.us-east-2.compute.amazonaws.com
+pull --> then run
+sudo docker pull valueorbitdockerhub/valueorbitfrontend:v23112022
+sudo docker run -d -p 3000:3000 valueorbitdockerhub/valueorbitfrontend:v23112022
+ 
+
+/***push for OMRANI only API mapsit // 
+sudo docker build -t mapsitdockerhub/valueorbit_api_repo:v5juillet2022 .
+sudo docker push mapsitdockerhub/valueorbit_api_repo:v5juillet2022
+sudo docker run -d -p 4000:4000 mapsitdockerhub/valueorbit_api_repo:v5juillet2022 // test local
+
+/***push for OMRANI Auto SYNCH mapsit // 
+sudo docker build -t mapsitdockerhub/valueorbit_autosynch_repo:v5juillet2022 .
+sudo docker push mapsitdockerhub/valueorbit_autosynch_repo:v5juillet2022
+sudo docker run -d -p 4500:4500 mapsitdockerhub/valueorbit_autosynch_repo:v5juillet2022 // test local
+
+
+//pass to prod machine
+sudo docker rm 61c8033b23f7 -f // remove l'ancienne
+
+sudo docker update --restart unless-stopped $(sudo docker ps -q)  // Auto restart always
+
+parseInt(moment(item?.closedate).month() ) + 1 ===  parseInt(filterOption?.fiscalmonth)
+
+//machine EC2 : amazon always
+sudo ssh -i ./NewKey.pem ubuntu@ec2-3-140-248-0.us-east-2.compute.amazonaws.com
+
+
+//back up mongodb
+take from :  mongodump --uri mongodb+srv://omrani:rocame460@cluster0.kfxvl.mongodb.net/ValueOrbitDB_api1/ValueOrbitDB_api1
+put here : mongorestore --uri mongodb+srv://valueorbit:valueorbitdemo@clustervalueorbit1.1sjfobv.mongodb.net
+
+MongoDB Cloud Atlas account:
+login: amine.omrani@valueorbit.com
+pwd: maeTtseB1234!
+The corresponding Cluster name is "Clustervalueorbit1":
+login: valueorbit
+pwd: valueorbitdemo
+The corresponding DATABASE name is : "ValueOrbitDB_v1"
+The corresponding URI : --uri: mongodb+srv://valueorbit:valueorbitdemo@clustervalueorbit1.1sjfobv.mongodb.net/ValueOrbitDB_v1
+
+
+
+//API TO TEST
+AUTOSYNCH_URL_TEST = https://jsonplaceholder.typicode.com/users

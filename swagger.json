@@ -1,0 +1,23 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "0.9.0",
+      "title": "Value Orbit Project V0.9",
+      "description": "Value Orbit Project V0.9",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:4001",
+    "basePath": "/v1/opportunity/",
+    "tags": [
+      {
+        "name": "valueorbit-backend-api-v1",
+        "description": "API for valueOrbit system"
+      }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"]
+  }
